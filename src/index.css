@@ -5,9 +5,79 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(44, 43, 43);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(113, 177, 184);
+  background: linear-gradient(0deg, rgba(113, 177, 184, 1) 0%, rgba(121, 157, 30, 1) 100%);
+  color: white;
+  font-size: 24px;
+}
+.header {
+  color: white;
+  font-size: 24px;
+  margin-left: 34px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-right: 24px;
+  text-decoration: underline;
+}
+
+.home {
+  margin: 34px;
+}
+
+.blogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(95, 152, 133);
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 6px;
+}
+.blogs:hover {
+  box-shadow: 4px 4px 4px rgb(79, 77, 77);
+}
+.blogs p {
+  color: white;
+  font-weight: 400;
+}
+.btn {
+  background: rgb(113, 177, 184);
+  background: linear-gradient(0deg, rgba(113, 177, 184, 1) 0%, rgba(121, 157, 30, 1) 100%);
+  border-radius: 6px;
+  padding: 6px 18px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid white;
+  margin-right: 24px;
+}
+.btn:hover {
+  color: rgb(211, 99, 122);
+  cursor: pointer;
+  border: 1px solid rgb(211, 99, 122);
+  transition: ease-in-out 0.7s;
+}
+.loading {
+  color: rgb(168, 168, 52);
+  font-weight: bold;
+  font-size: 24px;
 }

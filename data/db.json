@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "title": "My First Blog",
+            "body": "Lorem ipsum delirium in the streetable of knollege",
+            "author": "teodor",
+            "id": 1
+        },
+        {
+            "title": "My First Todo",
+            "body": "Lorem ipsum delirium in the streetable of knollege",
+            "author": "maria",
+            "id": 2
+        }
+    ]
+}
