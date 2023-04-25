@@ -1,3 +1,6 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,10 +29,10 @@ code {
 }
 
 .header {
-  color: white;
+  color: rgb(211, 99, 122);
   font-size: 34px;
   font-weight: bold;
-  margin-left: 34px;
+  margin-left: 40px;
   text-decoration: none;
 }
 
@@ -69,31 +72,33 @@ code {
 .blogs {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+
 }
 
 .blogs div {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   padding-bottom: 6px;
-  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 0px;
 }
 
 .blogs div a {
   color: rgb(95, 152, 133);
   text-decoration: none;
+
 }
 
 .blogs:hover {
-  box-shadow: 4px 4px 4px rgb(79, 77, 77);
-  padding-right: 12px;
+  box-shadow: 2px 2px 4px rgb(95, 152, 133);
 
 }
 
 .blogs p {
   color: white;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .btn {
@@ -101,17 +106,17 @@ code {
   background: linear-gradient(0deg, rgba(113, 177, 184, 1) 0%, rgba(121, 157, 30, 1) 100%);
   border-radius: 6px;
   padding: 6px 18px;
-  color: white;
+  color: rgb(211, 99, 122);
   font-size: 18px;
   font-weight: bold;
-  border: 1px solid white;
+  border: 1px solid rgb(211, 99, 122);
   margin-bottom: 24px;
 }
 
 .btn:hover {
-  color: rgb(211, 99, 122);
+  color: white;
+  border: 1px solid white;
   cursor: pointer;
-  border: 1px solid rgb(211, 99, 122);
   transition: ease-in-out 0.7s;
 }
 .loader-wrapper {
@@ -160,7 +165,8 @@ code {
 
 }
 .create h2 {
-  color: rgb(211, 99, 122);
+  color: rgb(113, 184, 138);
+  font-size: 30px;
 }
 .create form {
   display: flex;
@@ -169,37 +175,53 @@ code {
   align-items: center;
   width: 30%;
   margin: 0 auto;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-  box-shadow: 4px 4px 4px rgb(79, 77, 77);
+  border: 2px solid rgb(113, 184, 138);
+  /* box-shadow: 4px 4px 7px rgb(113, 184, 138); */
   margin-bottom: 24px;
+  background-color: white;
 }
+
 .create label {
-  color: rgb(113, 177, 184);;
+  color: rgb(211, 99, 122);
   padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
   
 }
 .create input {
   width: 80%;
   border-radius: 6px;
+  border: 1px solid rgb(109, 107, 107);
   text-align: center;
   font-size: 22px;
   color:rgb(79, 77, 77);
 }
+  .create input:focus {
+    outline: grey;
+  }
 .create select {
   width: 80%;
   border-radius: 6px;
+  border: 1px solid rgb(109, 107, 107);
   text-align: center;
   font-size: 22px;
   color: rgb(79, 77, 77);
+  margin-bottom: 24px;
+
+}
+.create select:focus {
+  outline: grey;
 }
 .create textarea {
   width: 80%;
   border-radius: 6px;
+  border: 1px solid rgb(109, 107, 107);
   font-size: 22px;
   text-align: center;
   color: rgb(79, 77, 77);
-  margin-bottom: 24px;
+}
+.create textarea:focus {
+  outline: grey;
 }
 
 .about {
@@ -212,12 +234,28 @@ code {
 }
 
 .contacts {
-  color: white;
-  font-size: 24px;
+  color: rgb(113, 184, 138);
   text-align: center;
   border-bottom: 1px solid;
   width: 40%;
   margin: 0 auto;
+  
+}
+.contacts h2 {
+  font-size: 30px;
+  margin-bottom: 44px;
+
+}
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+.contacts i {
+  color: white;
+  font-size: 34px;
+  box-shadow: 2px 2px 4px rgb(113, 184, 138);
 }
 
 .blog-details {
@@ -258,3 +296,32 @@ code {
   border-bottom: 1px solid rgb(95, 152, 133);
   margin-bottom: 24px;
 }
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 34px;
+  width: 30%;
+  box-shadow: 2px 2px 4px rgb(211, 99, 122);
+
+}
+.not-found:hover {
+  box-shadow: 2px 2px 4px rgb(95, 152, 133);
+}
+.not-found h2 {
+  color: rgb(211, 99, 122);
+  font-size: 34px;
+  margin-top:16px;
+}
+.not-found p {
+  color: white;
+  font-size: 20px;
+}
+.not-found a {
+  font-size: 18px;
+  color: rgb(95, 152, 133);
+  margin-bottom: 24px;
+} 

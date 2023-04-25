@@ -24,7 +24,7 @@ export const useFetch = (url) => {
                     setError(err.message);
                     setIsPending(false);
                 })
-        }, 2000)
+        }, 1000)
     }, [url]);
 
     return {data, isPending, error }

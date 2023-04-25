@@ -3,9 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { Home } from "./Home";
 import { Create } from "./Create";
-import { About } from "./About";
 import { Contacts } from "./Contacts";
 import { BlogDetails } from "./BlogDetails";
+import { NotFound } from "./NotFound";
 
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/create" element={<Create />} />
-                    <Route path="/about" element={<About />} />
                     <Route path="/contacts" element={<Contacts />} />
                     <Route path="/blogs/:id" element={<BlogDetails />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </main>
         </div>

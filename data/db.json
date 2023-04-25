@@ -1,16 +1,34 @@
 {
-    "blogs": [
-        {
-            "title": "My First Blog",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-            "author": "teodor",
-            "id": 1
-        },
-        {
-            "title": "My First Todo",
-            "body": "Lorem ipsum delirium in the streetable of knollege",
-            "author": "maria",
-            "id": 2
-        }
-    ]
+  "blogs": [
+    {
+      "title": "Hello there",
+      "author": "maria",
+      "body": "Hello there, how are you today. I am writing to you with so much joy and happyness, I was in home fom more than 10 days and i feel really good wright now.",
+      "id": 4
+    },
+    {
+      "title": "Hello from Dubai",
+      "author": "maria",
+      "body": "Hello from sunny Dubai, I was in there for a mnonth and it was so generic and good in a good way.",
+      "id": 5
+    },
+    {
+      "title": "Good Night",
+      "author": "maria",
+      "body": "Good night my love I want to sleep well and calm",
+      "id": 8
+    },
+    {
+      "title": "My title",
+      "author": "teodor",
+      "body": "asbjkhf isjkhdfshk skjbcdhs skjhvosv skjbvslv",
+      "id": 9
+    },
+    {
+      "title": "Hello again",
+      "author": "teodor",
+      "body": "asfsadgfaf wsefsvd sfwdsfdv",
+      "id": 15
+    }
+  ]
 }
