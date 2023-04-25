@@ -16,3 +16,5 @@ You may also see any lint errors in the console.
 
 
 You need to open the terminal and start a json server : `npx json-server --watch data/db.json --port 8000`
+
+I have used and the react-router-dom ofcourse, so open new terminal and type: `npm i react-router-dom`

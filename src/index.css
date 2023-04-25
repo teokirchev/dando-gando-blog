@@ -21,11 +21,16 @@ code {
   background: linear-gradient(0deg, rgba(113, 177, 184, 1) 0%, rgba(121, 157, 30, 1) 100%);
   color: white;
   font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 .header {
   color: white;
-  font-size: 24px;
+  font-size: 34px;
+  font-weight: bold;
   margin-left: 34px;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -33,32 +38,64 @@ code {
   align-items: center;
 }
 
-.nav-links li {
-  list-style: none;
+
+
+.nav-links a {
   margin-right: 24px;
-  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+
 }
+
+.nav-links a.active {
+  color: rgb(211, 99, 122);
+  border-bottom: 2px solid rgb(211, 99, 122);
+  border-right: 2px solid rgb(211, 99, 122);
+  padding-right: 8px;
+}
+
 
 .home {
   margin: 34px;
+}
+
+.home p {
+  color: rgb(211, 99, 122);
+  font-size: 24px;
+  margin-bottom: 0px;
 }
 
 .blogs {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgb(95, 152, 133);
+}
+
+.blogs div {
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 6px;
+  padding-right: 12px;
 }
+
+.blogs div a {
+  color: rgb(95, 152, 133);
+  text-decoration: none;
+}
+
 .blogs:hover {
   box-shadow: 4px 4px 4px rgb(79, 77, 77);
+  padding-right: 12px;
+
 }
+
 .blogs p {
   color: white;
   font-weight: 400;
+  font-size: 18px;
 }
+
 .btn {
   background: rgb(113, 177, 184);
   background: linear-gradient(0deg, rgba(113, 177, 184, 1) 0%, rgba(121, 157, 30, 1) 100%);
@@ -68,16 +105,156 @@ code {
   font-size: 18px;
   font-weight: bold;
   border: 1px solid white;
-  margin-right: 24px;
+  margin-bottom: 24px;
 }
+
 .btn:hover {
   color: rgb(211, 99, 122);
   cursor: pointer;
   border: 1px solid rgb(211, 99, 122);
   transition: ease-in-out 0.7s;
 }
-.loading {
-  color: rgb(168, 168, 52);
-  font-weight: bold;
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgba(113, 177, 184, 1);
+  border-right: 16px solid rgba(121, 157, 30, 1);
+  border-bottom: 16px solid rgb(211, 99, 122);
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.create {
+  color: white;
   font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.create h2 {
+  color: rgb(211, 99, 122);
+}
+.create form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  box-shadow: 4px 4px 4px rgb(79, 77, 77);
+  margin-bottom: 24px;
+}
+.create label {
+  color: rgb(113, 177, 184);;
+  padding: 16px;
+  
+}
+.create input {
+  width: 80%;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 22px;
+  color:rgb(79, 77, 77);
+}
+.create select {
+  width: 80%;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 22px;
+  color: rgb(79, 77, 77);
+}
+.create textarea {
+  width: 80%;
+  border-radius: 6px;
+  font-size: 22px;
+  text-align: center;
+  color: rgb(79, 77, 77);
+  margin-bottom: 24px;
+}
+
+.about {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 1px solid;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contacts {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 1px solid;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.blog-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.blog-details article {
+  text-align: center;
+  width: 70%;
+  border-left: 1 solid white;
+
+}
+
+.blog-details h2 {
+  color: rgb(95, 152, 133);
+  border-bottom: 1px solid;
+  padding-bottom: 12px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.blog-details p {
+  color: rgb(211, 99, 122);
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.blog-details .text {
+  text-align: start;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgb(95, 152, 133);
+  margin-bottom: 24px;
 }

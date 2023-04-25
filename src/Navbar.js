@@ -1,14 +1,15 @@
-import { Home } from "./Home";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
     return (
         <nav className="nav">
-            <h2 className="header">The Mojo-Jojo Blog</h2>
+            <NavLink to="/" className="header">The DandoGando Blog</NavLink>
 
-            <ul className="nav-links">
-                <li>About us</li>
-                <li>Contacts</li>
-            </ul>
+            <div className="nav-links">
+                <NavLink to="/create">Create</NavLink>
+                <NavLink to="/about">About me</NavLink>
+                <NavLink to="/contacts">Contacts</NavLink>
+            </div>
         </nav>
     );
 }
